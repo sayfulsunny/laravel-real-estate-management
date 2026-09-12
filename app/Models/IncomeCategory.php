@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class IncomeCategory extends Model
+{
+    protected $guarded = [];
+    public function incomes()
+    {
+        return $this->hasMany(Income::class);
+    }
+}
