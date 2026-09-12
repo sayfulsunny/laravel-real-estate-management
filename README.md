@@ -1,61 +1,154 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Real Estate Management System
+A Laravel-based real estate management system designed to manage projects, customers, installments, income, expenses, commissions, financial reports, users, roles, permissions, and promotional SMS from a centralized dashboard.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+📸 Screenshots
+Dashboard
+Project Management
+Customer Management
+Installment Management
+Reports
+✨ Features
+Dashboard
+Centralized dashboard
+Overview of projects and financial activities
+Quick access to major modules
+Customer Management
+Customer management
+Customer information tracking
+Customer summary reports
+Project Management
+Project management
+Project-wise information
+Project expense management
+Project reports
+Installment Management
+Installment management
+Installment tracking
+Customer installment information
+Income & Expense Management
+Income management
+Project expense management
+Expense categorization
+Category-wise expense reports
+Yearly financial reports
+Commission Management
+Commission management
+Commission withdrawal
+Commission withdrawal history
+Commission-related reporting
+Reporting
+Commission reports
+Project reports
+Expense reports
+Category expense reports
+Yearly financial reports
+Customer summary reports
+Promotional SMS
+Promotional SMS management
+Customer communication support
+User & Permission Management
+User management
+Role management
+Permission management
+Role-based access control
+Backup
+Database/system backup functionality
+🛠️ Technology Stack
+Backend: Laravel / PHP
+Database: MySQL
+Frontend: Blade, HTML, CSS, JavaScript
+Version Control: Git & GitHub
+📋 Requirements
+Before installing this project, make sure you have:
 
-## About Laravel
+PHP
+Composer
+MySQL
+Node.js & NPM
+Laravel-compatible web server or Laravel development server
+⚙️ Installation
+1. Clone the repository
+git clone https://github.com/sayfulsunny/laravel-real-estate-management.git
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+2. Go to the project directory
+cd laravel-real-estate-management
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+3. Install PHP dependencies
+composer install
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+4. Install frontend dependencies
+npm install
 
-## Learning Laravel
+5. Create environment file
+Copy .env.example to .env:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+cp .env.example .env
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+For Windows PowerShell:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Copy-Item .env.example .env
 
-## Laravel Sponsors
+6. Generate application key
+php artisan key:generate
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+7. Configure database
+Update your .env file with your MySQL database information:
 
-### Premium Partners
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+8. Run migrations
+php artisan migrate
 
-## Contributing
+If the project requires seed data:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+php artisan db:seed
 
-## Code of Conduct
+9. Build frontend assets
+npm run build
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+10. Start the Laravel development server
+php artisan serve
 
-## Security Vulnerabilities
+The application will be available at:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+http://127.0.0.1:8000
 
-## License
+🔐 Authentication & Access Control
+The system includes user, role, and permission management to control access to different modules according to user roles.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+📊 Reporting
+The system provides multiple reports to help monitor business and financial activities, including:
+
+Commission Report
+Commission Withdrawal History
+Project Report
+Expense Report
+Category Expense Report
+Yearly Financial Report
+Customer Summary Report
+💾 Backup
+The system includes backup functionality to help protect important application data.
+
+📱 Promotional SMS
+The system includes promotional SMS functionality for communicating with customers.
+
+🚀 Future Improvements
+Potential future improvements may include:
+
+Online payment integration
+Customer portal
+REST API
+Advanced analytics dashboard
+Automated notifications
+Online property booking
+Cloud-based backup
+Production deployment
+👨‍💻 Developer
+Sayful Islam
+
+GitHub: @sayfulsunny
+
+📄 License
+This project is developed for portfolio and demonstration purposes.
